@@ -29,7 +29,8 @@
 			</Operation>
 			
 			<!--RT_M48H_MediumTank-->
-			<xpath>Defs/Vehicles.VehicleDef[defName="RT_M48H_MediumTank"]</xpath>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_M48H_MediumTank"]</xpath>
 				<value>
 					<descriptionHyperlinks>
 						<!--RT_M48H_Tank_Turret-->
@@ -40,20 +41,23 @@
 						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
-			</xpath>
+			</Operation>
 			
 			<!--RT_M113_APC-->
-			<xpath>Defs/Vehicles.VehicleDef[defName="RT_M113_APC"]</xpath>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_M113_APC"]</xpath>
 				<value>
 					<descriptionHyperlinks>
 						<!--RT_M2HB_MGTurret-->
 						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
-			</xpath>
+			</Operation>
+
 			
 			<!--RT_M113M_APC-->
-			<xpath>Defs/Vehicles.VehicleDef[defName="RT_M113M_APC"]</xpath>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_M113M_APC"]</xpath>
 				<value>
 					<descriptionHyperlinks>
 						<!--RT_M249_MGTurret-->
@@ -62,17 +66,18 @@
 						<CombatExtended.AmmoSetDef>AmmoSet_81mmMortarShell</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
-			</xpath>
+			</Operation>
 			
 			<!--RT_M1075_HEMTT-->
-			<xpath>Defs/Vehicles.VehicleDef[defName="RT_M1075_HEMTT"]</xpath>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_M1075_HEMTT"]</xpath>
 				<value>
 					<descriptionHyperlinks>
 						<!--RT_M249_MGTurret_HEMTT-->
 						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
-			</xpath>
+			</Operation>
 
 		</caseTrue>
 	</Operation>
