@@ -6,7 +6,7 @@
 		</mods>
 		<packageId>true</packageId>
 		<caseTrue>
-	
+			
 			<!-- Humvee -->
 			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleDef[defName="AncientJeep"]</xpath>
@@ -15,7 +15,7 @@
 						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
-			</Operation>			
+			</Operation>
 			
 		</caseTrue>
 	</Operation>
