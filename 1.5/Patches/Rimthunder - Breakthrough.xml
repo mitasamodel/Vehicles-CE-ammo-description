@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>RimThunderTeams.RimThunder.Breakthrough</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+	
+			<!-- BMP3 -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_BMP3_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<CombatExtended.AmmoSetDef>AmmoSet_100mmShell</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_30x165mm</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_57x348sr</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!-- BMPT -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_BMPT_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<CombatExtended.AmmoSetDef>AmmoSet_30x165mm</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_9M120M</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_30x29mmGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!-- T80BVM -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_T80BVM_MainBattleTank"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<CombatExtended.AmmoSetDef>AmmoSet_125mmTC</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

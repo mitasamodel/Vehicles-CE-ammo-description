@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>mitasamodel.vehiclesceammodescription</packageId>
+	<name>Vehicles: CE ammo description</name>
+	<author>mitasamodel</author>
+	<description>Add link to CE ammo in vehicle's description. Allows to see the projectile's parameters</description>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	
+	<modDependencies>
+		<li>
+			<packageId>CETeam.CombatExtended</packageId>
+			<displayName>Combat Extended</displayName>
+			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	
+	<loadAfter>
+		<li>imranfish.xmlextensions</li>
+		<li>CETeam.CombatExtended</li>
+		<li>RimThunderTeams.RimThunder.Breakthrough</li>
+		<li>AncientJeep.RUS</li>
+	</loadAfter>
+</ModMetaData>
