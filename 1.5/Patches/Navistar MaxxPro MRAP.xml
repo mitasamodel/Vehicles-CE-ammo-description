@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>Killerbot.NavistarMaxxPro</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+	
+			<!-- Navistar MaxxPro MRAP -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="HID_Navistar_M2HB"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+
+		</caseTrue>
+	</Operation>
+</Patch>
