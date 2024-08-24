@@ -1,4 +1,4 @@
-List of vehicle's mods:
+List of currently included vehicle's mods:
 
 RimThunder - Breakthrough
 https://steamcommunity.com/sharedfiles/filedetails/?id=3276566575
