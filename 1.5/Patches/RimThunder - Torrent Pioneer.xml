@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>RimThunderTeams.RimThunder.TorrentPioneer</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+	
+			<!-- BRDM2 -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_BRDM2_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!-- RT_BRDM2_Tank_Turret -->
+						<CombatExtended.AmmoSetDef>AmmoSet_145x114mm</CombatExtended.AmmoSetDef>
+						<!-- RT_pkt_MGTurret -->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<!--Konkurs_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_9M113</CombatExtended.AmmoSetDef>
+						<!--UB32_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_57mmRocket_direct</CombatExtended.AmmoSetDef>
+						<!--RT_kpvt_MG_Turret-->
+						<!--<CombatExtended.AmmoSetDef>AmmoSet_145x114mm</CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!-- BTR80 -->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_BTR80_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!-- RT_BTR80_Tank_Turret -->
+						<CombatExtended.AmmoSetDef>AmmoSet_145x114mm</CombatExtended.AmmoSetDef>
+						<!-- RT_pkt_MGTurret -->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<!--RT_GrenadeLauncherBTR / RT_BaseLauncher / Ammo_40x46mmGrenade_Smoke-->
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+						<!--BTR80A_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_30x165mm</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			
+			
+		</caseTrue>
+	</Operation>
+</Patch>

@@ -27,7 +27,8 @@
 		<li>imranfish.xmlextensions</li>
 		<li>CETeam.CombatExtended</li>
 		<li>RimThunderTeams.RimThunder.Breakthrough</li>
+		<li>RimThunderTeams.RimThunder.TorrentPioneer</li>
 		<li>AncientJeep.RUS</li>
-		<li>Killerbot.NavistarMaxxPro</li>
+		<li>Killerbot.NavistarMaxxPro</li>		
 	</loadAfter>
 </ModMetaData>

@@ -16,7 +16,7 @@
 						<CombatExtended.AmmoSetDef>AmmoSet_30x165mm</CombatExtended.AmmoSetDef>
 						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
 						<CombatExtended.AmmoSetDef>AmmoSet_57x348sr</CombatExtended.AmmoSetDef>
-						<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
 			</Operation>
@@ -42,7 +42,7 @@
 						<CombatExtended.AmmoSetDef>AmmoSet_125mmTC</CombatExtended.AmmoSetDef>
 						<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
 						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
-						<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
 					</descriptionHyperlinks>
 				</value>
 			</Operation>
