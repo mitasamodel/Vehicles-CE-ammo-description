@@ -18,7 +18,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3015218569
 RimThunder - Dragon Ascend
 https://steamcommunity.com/sharedfiles/filedetails/?id=3290545861
 
-RimThunder - Flashpoint (No balanced for CE, grenade launcher hasn't been patched)
+RimThunder - Flashpoint (Not balanced for CE, grenade launcher hasn't been patched)
 https://steamcommunity.com/sharedfiles/filedetails/?id=3074420389
 
 RimThunder - Roaring Tiger
