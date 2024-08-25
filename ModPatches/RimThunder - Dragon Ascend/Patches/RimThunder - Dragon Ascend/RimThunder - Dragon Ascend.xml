@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<!--RT_ZBD04A_Vehicle-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZBD04A_Vehicle"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -19,7 +20,8 @@
 		</value>
 	</Operation>
 	<!--RT_ZTQ15_MainBattleTank-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZTQ15_MainBattleTank"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -39,7 +41,8 @@
 		</value>
 	</Operation>
 	<!--RT_ZTZ99A_MainBattleTank-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZTZ99A_MainBattleTank"]</xpath>
 		<value>
 			<descriptionHyperlinks>

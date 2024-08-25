@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="XmlExtensions.FindMod">
-		<mods>
-			<li>AncientJeep.RUS</li>
-		</mods>
-		<packageId>true</packageId>
-		<caseTrue>
-			
-			<!-- Humvee -->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="AncientJeep"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
-			
-		</caseTrue>
+	<!-- Humvee -->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="AncientJeep"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
 	</Operation>
+
 </Patch>

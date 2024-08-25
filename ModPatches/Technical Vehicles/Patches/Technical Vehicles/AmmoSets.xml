@@ -2,7 +2,8 @@
 <Patch>
 			
 	<!--TC_BigBread-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_BigBread"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -19,7 +20,8 @@
 	</Operation>
 	
 	<!--TC_Cruiser-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_Cruiser"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -36,7 +38,8 @@
 	</Operation>
 	
 	<!--TC_Fellowtown-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_Fellowtown"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -47,7 +50,8 @@
 	</Operation>
 	
 	<!--TC_Katyusha-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_Katyusha"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -58,7 +62,8 @@
 	</Operation>
 	
 	<!--TC_Sturmgeschutz-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_Sturmgeschutz"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -69,7 +74,8 @@
 	</Operation>
 	
 	<!--TC_Vasilek-->
-	<!--<Operation Class="PatchOperationAdd">
+	<!--<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_Vasilek"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -80,7 +86,8 @@
 	</Operation>-->
 	
 	<!--TC_ShoppingCart-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_ShoppingCart"]</xpath>
 		<value>
 			<descriptionHyperlinks>
@@ -91,7 +98,8 @@
 	</Operation>
 	
 	<!--TC_DumpTruck-->
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
 		<xpath>Defs/Vehicles.VehicleDef[defName="TC_DumpTruck"]</xpath>
 		<value>
 			<descriptionHyperlinks>

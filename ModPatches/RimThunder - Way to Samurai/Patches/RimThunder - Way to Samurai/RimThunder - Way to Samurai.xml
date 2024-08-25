@@ -1,100 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="XmlExtensions.FindMod">
-		<mods>
-			<li>RimThunderTeams.RimThunder.WaytoSamurai</li>
-		</mods>
-		<packageId>true</packageId>
-		<caseTrue>
+	<!--RT_Type61_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type61_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type61_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_90mmCannonShell</CombatExtended.AmmoSetDef>
+				<!--RT_m2hb_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+				<!--RT_Type74_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
 			
-			<!--RT_Type61_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type61_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type61_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_90mmCannonShell</CombatExtended.AmmoSetDef>
-						<!--RT_m2hb_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-						<!--RT_Type74_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
+	<!--RT_Type73_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type73_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type73_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+				<!--RT_Type74_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+				<!--RT_GrenadeLauncher73 / RT_BaseLauncher-->
+				<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
 			
-			<!--RT_Type73_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type73_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type73_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-						<!--RT_Type74_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-						<!--RT_GrenadeLauncher73 / RT_BaseLauncher-->
-						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
+	<!--RT_Type74_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type74_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type74_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_105x617mmRCannonShell</CombatExtended.AmmoSetDef>
+				<!--RT_m2hb_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+				<!--RT_Type74_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+				<!--RT_GrenadeLauncher74-->
+				<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
 			
-			<!--RT_Type74_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type74_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type74_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_105x617mmRCannonShell</CombatExtended.AmmoSetDef>
-						<!--RT_m2hb_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-						<!--RT_Type74_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-						<!--RT_GrenadeLauncher74-->
-						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
+	<!--RT_Type75_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type75_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type75_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_155mmHowitzerShell</CombatExtended.AmmoSetDef>
+				<!--RT_m2hb_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
 			
-			<!--RT_Type75_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type75_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type75_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_155mmHowitzerShell</CombatExtended.AmmoSetDef>
-						<!--RT_m2hb_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
+	<!--RT_Type87_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type87_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type87_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_25x137mmNATO</CombatExtended.AmmoSetDef>
+				<!--RT_Type74_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+				<!--RT_GrenadeLauncher87-->
+				<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
 			
-			<!--RT_Type87_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type87_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type87_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_25x137mmNATO</CombatExtended.AmmoSetDef>
-						<!--RT_Type74_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-						<!--RT_GrenadeLauncher87-->
-						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
-			
-			<!--RT_Type99_Vehicle-->
-			<Operation Class="PatchOperationAdd">
-				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type99_Vehicle"]</xpath>
-				<value>
-					<descriptionHyperlinks>
-						<!--RT_Type99_Tank_Turret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_155mmHowitzerShell</CombatExtended.AmmoSetDef>
-						<!--RT_m2hb_MGTurret-->
-						<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-					</descriptionHyperlinks>
-				</value>
-			</Operation>
-
-		</caseTrue>
+	<!--RT_Type99_Vehicle-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type99_Vehicle"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--RT_Type99_Tank_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_155mmHowitzerShell</CombatExtended.AmmoSetDef>
+				<!--RT_m2hb_MGTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
 	</Operation>
 </Patch>
