@@ -12,6 +12,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3143158800
 RimThunder - Breakthrough
 https://steamcommunity.com/sharedfiles/filedetails/?id=3276566575
 
+RimThunder - Cold Front
+https://steamcommunity.com/sharedfiles/filedetails/?id=3015218569
+
 RimThunder - Roaring Tiger
 https://steamcommunity.com/sharedfiles/filedetails/?id=3022258867
 
