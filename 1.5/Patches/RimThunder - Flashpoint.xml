@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>RimThunderTeams.RimThunder.Flashpoint</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			
+			<!--RT_Chain_Saw_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Chain_Saw_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Chain_Saw_Main_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+						<!--RT_Frag_Flashpoint-->
+						<!--<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_Circular_Saw_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Circular_Saw_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Circular_Saw_Main_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+						<!--RT_Frag_Flashpoint-->
+						<!--<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_Electric_Saw_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Electric_Saw_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Electric_Saw_Main_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_50mmRocket</CombatExtended.AmmoSetDef>
+						<!--RT_Frag_Flashpoint-->
+						<!--<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_Ripper_Saw_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Ripper_Saw_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Ripper_Saw_Main_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_30x173mmNATO</CombatExtended.AmmoSetDef>
+						<!--RT_Frag_Flashpoint-->
+						<!--<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_Striker_CAV_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Striker_CAV_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Striker_CAV_Main_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_40x365mmBofors</CombatExtended.AmmoSetDef>
+						<!--RT_Striker_CAV_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+						<!--RT_Frag_Flashpoint-->
+						<!--<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>-->
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+		</caseTrue>
+	</Operation>
+</Patch>
