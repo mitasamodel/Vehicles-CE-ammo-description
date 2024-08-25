@@ -36,7 +36,8 @@
 		<li>RimThunderTeams.RimThunder.Flashpoint</li><!--RimThunder - Flashpoint-->
 		<li>RimThunderTeams.RimThunder.RedDragon</li><!--RimThunder - Red Dragon-->
 		<li>Aoba.RimThunder.ROCA</li><!--RimThunder - Roaring Tiger-->
-		<li>RimThunderTeams.RimThunder.TorrentPioneer</li>
-		<li>RimThunderTeams.RimThunder.WaytoSamurai</li>
+		<li>RimThunderTeams.RimThunder.TorrentPioneer</li><!--RimThunder - Torrent Pioneer-->
+		<li>RimThunderTeams.RimThunder.WaytoSamurai</li><!--RimThunder - Way to Samurai-->
+		<li>MO.TechnicalVehicles</li><!--Technical Vehicles-->
 	</loadAfter>
 </ModMetaData>

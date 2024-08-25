@@ -1,40 +1,14 @@
 List of currently included vehicle's mods:
 
-Humvee
-https://steamcommunity.com/sharedfiles/filedetails/?id=3026484272
-
-Navistar MaxxPro MRAP
-https://steamcommunity.com/sharedfiles/filedetails/?id=3290888503
-
-RimThunder - Ardennes Assault
-https://steamcommunity.com/sharedfiles/filedetails/?id=3143158800
-
-RimThunder - Breakthrough
-https://steamcommunity.com/sharedfiles/filedetails/?id=3276566575
-
-RimThunder - Cold Front
-https://steamcommunity.com/sharedfiles/filedetails/?id=3015218569
-
-RimThunder - Dragon Ascend
-https://steamcommunity.com/sharedfiles/filedetails/?id=3290545861
-
-RimThunder - Flashpoint (Not balanced for CE, grenade launcher hasn't been patched)
-https://steamcommunity.com/sharedfiles/filedetails/?id=3074420389
-
-RimThunder - Red Dragon
-https://steamcommunity.com/sharedfiles/filedetails/?id=3174128201
-
-RimThunder - Roaring Tiger
-https://steamcommunity.com/sharedfiles/filedetails/?id=3022258867
-
-RimThunder - Torrent Pioneer
-https://steamcommunity.com/sharedfiles/filedetails/?id=3293212543
-
-RimThunder - Way to Samurai
-https://steamcommunity.com/sharedfiles/filedetails/?id=3251844413
-
-
-
-
-
-
+- Humvee
+- Navistar MaxxPro MRAP
+- RimThunder - Ardennes Assault
+- RimThunder - Breakthrough
+- RimThunder - Cold Front
+- RimThunder - Dragon Ascend
+- RimThunder - Flashpoint (Not balanced for CE, grenade launcher doesn't work)
+- RimThunder - Red Dragon
+- RimThunder - Roaring Tiger
+- RimThunder - Torrent Pioneer
+- RimThunder - Way to Samurai
+- Technical Vehicles
