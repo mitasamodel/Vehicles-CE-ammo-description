@@ -15,6 +15,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3276566575
 RimThunder - Cold Front
 https://steamcommunity.com/sharedfiles/filedetails/?id=3015218569
 
+RimThunder - Dragon Ascend
+https://steamcommunity.com/sharedfiles/filedetails/?id=3290545861
+
 RimThunder - Roaring Tiger
 https://steamcommunity.com/sharedfiles/filedetails/?id=3022258867
 
