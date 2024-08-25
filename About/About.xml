@@ -26,15 +26,17 @@
 	<loadAfter>
 		<li>imranfish.xmlextensions</li>
 		<li>CETeam.CombatExtended</li>
+		<!--<li>ZaryuHEV.Mod</li><!{1}**Hostile Environment Vehicles**{1}>-->
+		<li>AncientJeep.RUS</li>
+		<li>Killerbot.NavistarMaxxPro</li>
 		<li>RimThunderTeams.RimThunder.ArdennesAssault</li>
 		<li>RimThunderTeams.RimThunder.Breakthrough</li>
 		<li>Aoba.RimThunder.RedArmy.ColdFront</li>
-		<li>RimThunderTeams.RimThunder.TorrentPioneer</li>
-		<li>RimThunderTeams.RimThunder.WaytoSamurai</li>
-		<li>Aoba.RimThunder.ROCA</li>
-		<li>AncientJeep.RUS</li>
-		<li>Killerbot.NavistarMaxxPro</li>
 		<li>RimThunderTeams.RimThunder.DragonAscend</li><!--RimThunder - Dragon Ascend-->
 		<li>RimThunderTeams.RimThunder.Flashpoint</li><!--RimThunder - Flashpoint-->
+		<li>RimThunderTeams.RimThunder.RedDragon</li><!--RimThunder - Red Dragon-->
+		<li>Aoba.RimThunder.ROCA</li>
+		<li>RimThunderTeams.RimThunder.TorrentPioneer</li>
+		<li>RimThunderTeams.RimThunder.WaytoSamurai</li>
 	</loadAfter>
 </ModMetaData>

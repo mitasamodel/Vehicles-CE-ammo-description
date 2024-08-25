@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--ZA_trashtra-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="ZA_trashtra"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--ZA_trashtra_MainTurret-->
+				<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>
+				<!--ZA_trashtra_STAAG-->
+				<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+	<!--ZA_trashtraG-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="ZA_trashtraG"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--ZA_trashtraG_MainTurret-->
+				<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>
+				<!--ZA_trashtraG_STAAG-->
+				<CombatExtended.AmmoSetDef></CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+</Patch>

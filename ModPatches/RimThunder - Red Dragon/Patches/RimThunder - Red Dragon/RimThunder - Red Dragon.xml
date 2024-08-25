@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>RimThunderTeams.RimThunder.RedDragon</li>
+		</mods>
+		<packageId>true</packageId>
+		<caseTrue>
+			
+			<!--RT_PLZ83_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_PLZ83_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_PLZ83_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_155mmHowitzerShell</CombatExtended.AmmoSetDef>
+						<!--RT_Dshk_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_Type85III_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_Type85III_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_Type85III_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_125mmT85</CombatExtended.AmmoSetDef>
+						<!--RT_Dshk_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+						<!--RT_SgMT_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<!--RT_GrenadeLauncher85-->
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_ZBD86ce_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZBD86ce_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_ZBD86ce_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_SPG9Rocket</CombatExtended.AmmoSetDef>
+						<!--RT_SgMT_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_ZSL92_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZSL92_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_ZSL92_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_23x152mmB</CombatExtended.AmmoSetDef>
+						<!--RT_SgMT_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<!--RT_GrenadeLauncher92-->
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+			<!--RT_ZTZ88A_Vehicle-->
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="RT_ZTZ88A_Vehicle"]</xpath>
+				<value>
+					<descriptionHyperlinks>
+						<!--RT_ZTZ88A_Tank_Turret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_105x617mmRCannonShell</CombatExtended.AmmoSetDef>
+						<!--RT_Dshk_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+						<!--RT_SgMT_MGTurret-->
+						<CombatExtended.AmmoSetDef>AmmoSet_762x54mmR</CombatExtended.AmmoSetDef>
+						<!--RT_GrenadeLauncher88-->
+						<CombatExtended.AmmoSetDef>RTC_AmmoSet_SmokeGrenade</CombatExtended.AmmoSetDef>
+					</descriptionHyperlinks>
+				</value>
+			</Operation>
+			
+		</caseTrue>
+	</Operation>
+</Patch>
