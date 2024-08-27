@@ -3,7 +3,7 @@
 	<packageId>mitasamodel.vehiclesceammodescription</packageId>
 	<name>Vehicles: CE ammo description</name>
 	<author>mitasamodel</author>
-	<description>Add link to CE ammo in vehicle's description. Allows to see the projectile's parameters</description>
+	<description>Add link to CE ammo in vehicle's description. Allows to see the projectile's parameters.\nIncludes upgrades</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
