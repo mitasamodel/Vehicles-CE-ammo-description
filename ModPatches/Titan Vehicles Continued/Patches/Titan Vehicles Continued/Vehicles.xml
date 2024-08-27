@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+			
+	<!--JAHV_Conquistador-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--JAHV_Conquistador_MainTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_57x438mmBofors</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+	
+	<!--JASV_Warchief-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--JASV_WarchiefMainCannon-->
+				<CombatExtended.AmmoSetDef>AmmoSet_120mmCannonShell</CombatExtended.AmmoSetDef>
+				<!--JASV_Warchief_Turret_Autocannon-->
+				<CombatExtended.AmmoSetDef>AmmoSet_20x102mmNATO</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+
+
+</Patch>

@@ -16,3 +16,4 @@ List of currently included vehicle's mods:
 - RimThunder - Torrent Pioneer
 - RimThunder - Way to Samurai
 - Technical Vehicles
+- Titan Vehicles Continued

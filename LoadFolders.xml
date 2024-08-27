@@ -19,5 +19,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.NortherngradLion">ModPatches/RimThunder - Northerngrad Lion</li>
 		<li IfModActive="RimThunderTeams.RimThunder.RedCavalry">ModPatches/RimThunder - Red Cavalry</li>
 		<li IfModActive="amaoto.HelldiversVehicles">ModPatches/HELLDIVERS - Vehicles</li>
+		<li IfModActive="JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan Vehicles Continued</li>
 	</v1.5>
 </loadFolders>
