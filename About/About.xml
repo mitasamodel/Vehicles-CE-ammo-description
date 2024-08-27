@@ -42,5 +42,6 @@
 		<li>RimThunderTeams.RimThunder.RoyalGuard</li><!--RimThunder - Royal Guard-->
 		<li>RimThunderTeams.RimThunder.NortherngradLion</li><!--RimThunder - Northerngrad Lion-->
 		<li>RimThunderTeams.RimThunder.RedCavalry</li><!--RimThunder - Red Cavalry-->
+		<li>amaoto.HelldiversVehicles</li><!--HELLDIVERS - Vehicles-->
 	</loadAfter>
 </ModMetaData>

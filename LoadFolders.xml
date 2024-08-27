@@ -18,5 +18,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.RoyalGuard">ModPatches/RimThunder - Royal Guard</li>
 		<li IfModActive="RimThunderTeams.RimThunder.NortherngradLion">ModPatches/RimThunder - Northerngrad Lion</li>
 		<li IfModActive="RimThunderTeams.RimThunder.RedCavalry">ModPatches/RimThunder - Red Cavalry</li>
+		<li IfModActive="amaoto.HelldiversVehicles">ModPatches/HELLDIVERS - Vehicles</li>
 	</v1.5>
 </loadFolders>
