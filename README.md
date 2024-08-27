@@ -1,6 +1,7 @@
 List of currently included vehicle's mods:
 
 - Alpha Vehicles - Neolithic
+- CE Patches of Landkreuzer P1000 Ratte
 - HELLDIVERS - Vehicles
 - Humvee
 - Korean Armory II - Vehicles

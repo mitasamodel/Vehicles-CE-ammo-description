@@ -51,5 +51,6 @@
 		<li>Aoba.MZ.MobileWorker</li><!--Mechanization - MobileWorker-->
 		<li>Aoba.DeadManSwitch.Motorized</li><!--The Dead Man's Switch - Motorized-->
 		<li>RimThunderTeams.RimThunder.WarhorseofReich</li><!--RimThunder - Warhorse of Reich-->
+		<li>Lanking.P1000RCEPatches</li><!--CE Patches of Landkreuzer P1000 Ratte-->
 	</loadAfter>
 </ModMetaData>
