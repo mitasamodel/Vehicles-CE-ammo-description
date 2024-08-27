@@ -25,5 +25,6 @@
 		<li IfModActive="fxz.ratkinvehicle.morefailure">ModPatches/Ratkin Vehicles+</li>
 		<li IfModActive="cgf1.vehiclesgalore.roka">ModPatches/Korean Armory II - Vehicles</li>
 		<li IfModActive="Aoba.MZ.MobileWorker">ModPatches/Mechanization - MobileWorker</li>
+		<li IfModActive="Aoba.DeadManSwitch.Motorized">ModPatches/The Dead Man's Switch - Motorized</li>
 	</v1.5>
 </loadFolders>

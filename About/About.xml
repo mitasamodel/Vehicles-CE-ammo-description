@@ -49,5 +49,6 @@
 		<li>fxz.ratkinvehicle.morefailure</li><!--Ratkin Vehicles+-->
 		<li>cgf1.vehiclesgalore.roka</li><!--Korean Armory II - Vehicles-->
 		<li>Aoba.MZ.MobileWorker</li><!--Mechanization - MobileWorker-->
+		<li>Aoba.DeadManSwitch.Motorized</li><!--The Dead Man's Switch - Motorized-->
 	</loadAfter>
 </ModMetaData>
