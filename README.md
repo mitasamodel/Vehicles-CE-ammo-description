@@ -1,8 +1,9 @@
 List of currently included vehicle's mods:
 
+- Alpha Vehicles - Neolithic
 - HELLDIVERS - Vehicles
 - Humvee
-- M808C Scorpion CE Patch
+- M808C Scorpion (CE Patch)
 - Navistar MaxxPro MRAP
 - RimThunder - Ardennes Assault
 - RimThunder - Breakthrough

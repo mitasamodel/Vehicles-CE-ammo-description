@@ -45,5 +45,6 @@
 		<li>amaoto.HelldiversVehicles</li><!--HELLDIVERS - Vehicles-->
 		<li>JAHV.SpacerVehiclesHAL.CONTINUED</li><!--Titan Vehicles Continued-->
 		<li>Omahawski.M808CCE</li><!--M808C Scorpion CE Patch-->
+		<li>sarg.alphavehiclesneolithic</li><!--Alpha Vehicles - Neolithic-->
 	</loadAfter>
 </ModMetaData>
