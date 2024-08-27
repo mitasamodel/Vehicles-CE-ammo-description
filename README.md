@@ -3,6 +3,7 @@ List of currently included vehicle's mods:
 - Alpha Vehicles - Neolithic
 - HELLDIVERS - Vehicles
 - Humvee
+- Korean Armory II - Vehicles
 - M808C Scorpion (CE Patch)
 - Navistar MaxxPro MRAP
 - Ratkin Vehicles+ (only ground vehicles and trains)
