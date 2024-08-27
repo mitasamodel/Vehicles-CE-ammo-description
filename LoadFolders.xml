@@ -22,5 +22,6 @@
 		<li IfModActive="JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan Vehicles Continued</li>
 		<li IfModActive="Omahawski.M808CCE">ModPatches/M808C Scorpion CE Patch</li>
 		<li IfModActive="sarg.alphavehiclesneolithic">ModPatches/Alpha Vehicles - Neolithic</li>
+		<li IfModActive="fxz.ratkinvehicle.morefailure">ModPatches/Ratkin Vehicles+</li>
 	</v1.5>
 </loadFolders>

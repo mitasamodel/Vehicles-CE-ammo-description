@@ -46,5 +46,6 @@
 		<li>JAHV.SpacerVehiclesHAL.CONTINUED</li><!--Titan Vehicles Continued-->
 		<li>Omahawski.M808CCE</li><!--M808C Scorpion CE Patch-->
 		<li>sarg.alphavehiclesneolithic</li><!--Alpha Vehicles - Neolithic-->
+		<li>fxz.ratkinvehicle.morefailure</li><!--Ratkin Vehicles+-->
 	</loadAfter>
 </ModMetaData>

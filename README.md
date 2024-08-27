@@ -5,6 +5,7 @@ List of currently included vehicle's mods:
 - Humvee
 - M808C Scorpion (CE Patch)
 - Navistar MaxxPro MRAP
+- Ratkin Vehicles+ (only ground vehicles and trains)
 - RimThunder - Ardennes Assault
 - RimThunder - Breakthrough
 - RimThunder - Cold Front
