@@ -16,5 +16,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.WaytoSamurai">ModPatches/RimThunder - Way to Samurai</li>
 		<li IfModActive="MO.TechnicalVehicles">ModPatches/Technical Vehicles</li>
 		<li IfModActive="RimThunderTeams.RimThunder.RoyalGuard">ModPatches/RimThunder - Royal Guard</li>
+		<li IfModActive="RimThunderTeams.RimThunder.NortherngradLion">ModPatches/RimThunder - Northerngrad Lion</li>
 	</v1.5>
 </loadFolders>
