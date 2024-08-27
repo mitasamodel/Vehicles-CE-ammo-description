@@ -8,6 +8,7 @@ List of currently included vehicle's mods:
 - M808C Scorpion (CE Patch)
 - Mechanization - MobileWorker
 - Navistar MaxxPro MRAP
+- Object 279 for RimWorld
 - Ratkin Vehicles+ (only ground vehicles and trains)
 - RimThunder - Ardennes Assault
 - RimThunder - Breakthrough

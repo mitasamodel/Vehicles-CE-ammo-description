@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--ZA_obj279Tank-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="ZA_obj279Tank"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--ZA_obj279_MainTurret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_120mmCannonShell</CombatExtended.AmmoSetDef>
+				<!--ZA_obj279_KPVT-->
+				<CombatExtended.AmmoSetDef>AmmoSet_145x114mm</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+
+</Patch>

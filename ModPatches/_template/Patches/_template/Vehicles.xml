@@ -8,8 +8,17 @@
 			<descriptionHyperlinks>
 				<!--_TURRET_DEF_-->
 				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
 			</descriptionHyperlinks>
 		</value>
 	</Operation>
-
 </Patch>

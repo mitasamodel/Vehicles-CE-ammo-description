@@ -52,5 +52,6 @@
 		<li>Aoba.DeadManSwitch.Motorized</li><!--The Dead Man's Switch - Motorized-->
 		<li>RimThunderTeams.RimThunder.WarhorseofReich</li><!--RimThunder - Warhorse of Reich-->
 		<li>Lanking.P1000RCEPatches</li><!--CE Patches of Landkreuzer P1000 Ratte-->
+		<li>Zaryuobj279.Mod</li><!--Object 279 for RimWorld-->
 	</loadAfter>
 </ModMetaData>
