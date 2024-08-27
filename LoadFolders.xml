@@ -15,5 +15,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.TorrentPioneer">ModPatches/RimThunder - Torrent Pioneer</li>
 		<li IfModActive="RimThunderTeams.RimThunder.WaytoSamurai">ModPatches/RimThunder - Way to Samurai</li>
 		<li IfModActive="MO.TechnicalVehicles">ModPatches/Technical Vehicles</li>
+		<li IfModActive="RimThunderTeams.RimThunder.RoyalGuard">ModPatches/RimThunder - Royal Guard</li>
 	</v1.5>
 </loadFolders>

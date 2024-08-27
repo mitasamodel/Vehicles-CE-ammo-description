@@ -24,8 +24,8 @@
 	</modDependencies>
 	
 	<loadAfter>
-		<li>imranfish.xmlextensions</li>
-		<li>CETeam.CombatExtended</li>
+		<li>imranfish.xmlextensions</li><!--XML Extensions-->
+		<li>CETeam.CombatExtended</li><!--Combat Extended-->
 		<!--<li>ZaryuHEV.Mod</li><!{1}**Hostile Environment Vehicles**{1}>-->
 		<li>AncientJeep.RUS</li>
 		<li>Killerbot.NavistarMaxxPro</li>
@@ -39,5 +39,6 @@
 		<li>RimThunderTeams.RimThunder.TorrentPioneer</li><!--RimThunder - Torrent Pioneer-->
 		<li>RimThunderTeams.RimThunder.WaytoSamurai</li><!--RimThunder - Way to Samurai-->
 		<li>MO.TechnicalVehicles</li><!--Technical Vehicles-->
+		<li>RimThunderTeams.RimThunder.RoyalGuard</li><!--RimThunder - Royal Guard-->
 	</loadAfter>
 </ModMetaData>
