@@ -9,6 +9,7 @@ List of currently included vehicle's mods:
 - Mechanization - MobileWorker
 - Navistar MaxxPro MRAP
 - Object 279 for RimWorld
+- R3 Capraia
 - Ratkin Vehicles+ (only ground vehicles and trains)
 - RimThunder - Ardennes Assault
 - RimThunder - Breakthrough

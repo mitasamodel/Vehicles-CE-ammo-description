@@ -29,5 +29,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.WarhorseofReich">ModPatches/RimThunder - Warhorse of Reich</li>
 		<li IfModActive="Lanking.P1000RCEPatches">ModPatches/CE Patches of Landkreuzer P1000 Ratte</li>
 		<li IfModActive="Zaryuobj279.Mod">ModPatches/Object 279 for RimWorld</li>
+		<li IfModActive="cancer3.ryougi">ModPatches/R3 Capraia</li>
 	</v1.5>
 </loadFolders>
