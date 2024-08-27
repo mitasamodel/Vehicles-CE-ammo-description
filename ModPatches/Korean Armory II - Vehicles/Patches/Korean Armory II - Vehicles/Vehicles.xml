@@ -13,27 +13,32 @@
 	</Operation>
 	
 	<!--CGF1_VG_K151_MG_K6_-->
-	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-		<compare>InnerText</compare>
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.VehicleDef[defName="CGF1_VG_K151_MG_K6_"]</xpath>
-		<value>
-			<descriptionHyperlinks>
-				<!--CGF1_VG_K151_MG_K6_MainTurret-->
-				<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
-			</descriptionHyperlinks>
-		</value>
+		<match Class="XmlExtensions.PatchOperationSafeAdd">
+			<compare>InnerText</compare>
+			<xpath>Defs/Vehicles.VehicleDef[defName="CGF1_VG_K151_MG_K6_"]</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<!--CGF1_VG_K151_MG_K6_MainTurret-->
+					<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
 	</Operation>
 	
 	<!--CGF1_VG_K151_MG_M60_-->
-	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
-		<compare>InnerText</compare>
+	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.VehicleDef[defName="CGF1_VG_K151_MG_M60_"]</xpath>
-		<value>
-			<descriptionHyperlinks>
-				<!--CGF1_VG_K151_MG_M60_MainTurret-->
-				<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
-			</descriptionHyperlinks>
-		</value>
+		<match Class="XmlExtensions.PatchOperationSafeAdd">
+			<compare>InnerText</compare>
+			<xpath>Defs/Vehicles.VehicleDef[defName="CGF1_VG_K151_MG_M60_"]</xpath>
+			<value>
+				<descriptionHyperlinks>
+					<!--CGF1_VG_K151_MG_M60_MainTurret-->
+					<CombatExtended.AmmoSetDef>AmmoSet_762x51mmNATO</CombatExtended.AmmoSetDef>
+				</descriptionHyperlinks>
+			</value>
+		</match>
 	</Operation>
-
 </Patch>
