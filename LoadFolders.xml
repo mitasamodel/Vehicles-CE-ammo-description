@@ -24,5 +24,6 @@
 		<li IfModActive="sarg.alphavehiclesneolithic">ModPatches/Alpha Vehicles - Neolithic</li>
 		<li IfModActive="fxz.ratkinvehicle.morefailure">ModPatches/Ratkin Vehicles+</li>
 		<li IfModActive="cgf1.vehiclesgalore.roka">ModPatches/Korean Armory II - Vehicles</li>
+		<li IfModActive="Aoba.MZ.MobileWorker">ModPatches/Mechanization - MobileWorker</li>
 	</v1.5>
 </loadFolders>

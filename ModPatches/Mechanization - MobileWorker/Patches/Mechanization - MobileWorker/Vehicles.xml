@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--MZ_MobileWorker-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="MZ_MobileWorker"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--MZ_MobileWorker_Turret-->
+				<CombatExtended.AmmoSetDef>AmmoSet_30x173mmNATO</CombatExtended.AmmoSetDef>
+				<!--FA_MW_GrenadeLauncher-->
+				<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+
+</Patch>

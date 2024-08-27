@@ -5,6 +5,7 @@ List of currently included vehicle's mods:
 - Humvee
 - Korean Armory II - Vehicles
 - M808C Scorpion (CE Patch)
+- Mechanization - MobileWorker
 - Navistar MaxxPro MRAP
 - Ratkin Vehicles+ (only ground vehicles and trains)
 - RimThunder - Ardennes Assault
