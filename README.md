@@ -19,6 +19,7 @@ List of currently included vehicle's mods:
 - RimThunder - Roaring Tiger
 - RimThunder - Royal Guard
 - RimThunder - Torrent Pioneer
+- RimThunder - Warhorse of Reich
 - RimThunder - Way to Samurai
 - Technical Vehicles
 - The Dead Man's Switch - Motorized

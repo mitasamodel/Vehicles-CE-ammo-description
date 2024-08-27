@@ -26,5 +26,6 @@
 		<li IfModActive="cgf1.vehiclesgalore.roka">ModPatches/Korean Armory II - Vehicles</li>
 		<li IfModActive="Aoba.MZ.MobileWorker">ModPatches/Mechanization - MobileWorker</li>
 		<li IfModActive="Aoba.DeadManSwitch.Motorized">ModPatches/The Dead Man's Switch - Motorized</li>
+		<li IfModActive="RimThunderTeams.RimThunder.WarhorseofReich">ModPatches/RimThunder - Warhorse of Reich</li>
 	</v1.5>
 </loadFolders>
