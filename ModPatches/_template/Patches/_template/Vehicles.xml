@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--_VEHICLE_DEF_-->
+	<Operation Class="XmlExtensions.PatchOperationSafeAdd">
+		<compare>InnerText</compare>
+		<xpath>Defs/Vehicles.VehicleDef[defName="_VEHICLE_DEF_"]</xpath>
+		<value>
+			<descriptionHyperlinks>
+				<!--_TURRET_DEF_-->
+				<CombatExtended.AmmoSetDef>_AMMOSET_DEF_</CombatExtended.AmmoSetDef>
+			</descriptionHyperlinks>
+		</value>
+	</Operation>
+
+</Patch>
