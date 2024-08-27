@@ -20,5 +20,6 @@
 		<li IfModActive="RimThunderTeams.RimThunder.RedCavalry">ModPatches/RimThunder - Red Cavalry</li>
 		<li IfModActive="amaoto.HelldiversVehicles">ModPatches/HELLDIVERS - Vehicles</li>
 		<li IfModActive="JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan Vehicles Continued</li>
+		<li IfModActive="Omahawski.M808CCE">ModPatches/M808C Scorpion CE Patch</li>
 	</v1.5>
 </loadFolders>

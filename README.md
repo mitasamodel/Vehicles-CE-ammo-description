@@ -2,6 +2,7 @@ List of currently included vehicle's mods:
 
 - HELLDIVERS - Vehicles
 - Humvee
+- M808C Scorpion CE Patch
 - Navistar MaxxPro MRAP
 - RimThunder - Ardennes Assault
 - RimThunder - Breakthrough
