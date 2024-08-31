@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using CombatExtended;
+using CombatExtended.Compatibility;
 using RimWorld;
 using Vehicles;
 using Verse;
@@ -42,7 +43,7 @@ namespace VehiclesCEAmmoDescription
 				HyperlinksTurrets(vehicle, turretsAmmoSet, log);
 
 				//Upgrades
-				HyperlinksUpgrades(vehicle, upgradesDict, turretsAmmoSet, log);
+				HyperlinksUpgrades(vehicle, upgradesDict, turretsAmmoSet);
 
 				log.Append("\n");
 			}
@@ -78,14 +79,14 @@ namespace VehiclesCEAmmoDescription
 							{
 								foreach (VehicleTurret turret in upgTurrets.turrets)
 								{
-									log?.AppendLine("UPG Turret: " + turret.turretDef);
+									log?.Append("UPG Turret: " + turret.turretDef);
 
 									//ammoSet exists for the turret
 									if (turretsAmmoSet[turret.turretDef.ToString()] != null)
 									{
-										log?.AppendLine("Hyperlink: " + turret.turretDef + " - " + turretsAmmoSet[turret.turretDef.ToString()]);
+										log?.AppendLine(" - " + turretsAmmoSet[turret.turretDef.ToString()]);
 
-										AddHyperlinkAmmoSet(vehicle, turretsAmmoSet[turret.turretDef.ToString()]);
+										AddHyperlinkAmmoSet(vehicle, turretsAmmoSet[turret.turretDef.ToString()], log);
 									}
 								}
 							}
@@ -105,12 +106,12 @@ namespace VehiclesCEAmmoDescription
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
 				{
-					log?.Append("Turret: " + turret.turretDef + "\n");
+					log?.Append("Turret: " + turret.turretDef);
 
 					//ammoSet exists for the turret
 					if (turretsAmmoSet[turret.turretDef.ToString()] != null)
 					{
-						log?.Append("Hyperlink: " + turret.turretDef + " - " + turretsAmmoSet[turret.turretDef.ToString()] + "\n");
+						log?.AppendLine(" - " + turretsAmmoSet[turret.turretDef.ToString()]);
 
 						AddHyperlinkAmmoSet(vehicle, turretsAmmoSet[turret.turretDef.ToString()]);
 					}
@@ -123,26 +124,26 @@ namespace VehiclesCEAmmoDescription
 		/// </summary>
 		private static void AddHyperlinkAmmoSet(VehicleDef vehicle, AmmoSetDef ammoSet, StringBuilder log = null)
 		{
-			if (vehicle == null)
-				return;
 			if (ammoSet == null)
 				return;
 
-			//If no hyperlinks yet, then create the node
-			if (vehicle.descriptionHyperlinks == null)
-				vehicle.descriptionHyperlinks = new List<DefHyperlink>();
+			AddHyperlink(vehicle, ammoSet, log);
+		}
 
-			//Do not add if already exists
-			foreach (DefHyperlink link in vehicle.descriptionHyperlinks)
+		private static void AddHyperlink(Def def, Def linkToAdd, StringBuilder log = null)
+		{
+			if (def == null) return;
+			if (def.descriptionHyperlinks == null)
+				def.descriptionHyperlinks = new List<DefHyperlink>();
+			foreach (DefHyperlink item in def.descriptionHyperlinks)
 			{
-				if (link.def == ammoSet)
+				if (item.def == linkToAdd)
 				{
-					log?.AppendLine("Link duplicate: " + link.def);
+					log?.AppendLine("Link duplicate: " + item.def);
 					return;
 				}
 			}
-
-			vehicle.descriptionHyperlinks.Add(ammoSet);
+			def.descriptionHyperlinks.Add(linkToAdd);
 		}
 
 		/// <summary>
