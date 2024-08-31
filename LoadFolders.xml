@@ -2,33 +2,5 @@
 <loadFolders>
 	<v1.5>
 		<li>/</li>
-		<!--<li IfModActive="ZaryuHEV.Mod">ModPatches/Hostile Environment Vehicles</li>-->
-		<li IfModActive="AncientJeep.RUS">ModPatches/Humvee</li>
-		<li IfModActive="Killerbot.NavistarMaxxPro">ModPatches/Navistar MaxxPro MRAP</li>
-		<li IfModActive="RimThunderTeams.RimThunder.ArdennesAssault">ModPatches/RimThunder - Ardennes Assault</li>
-		<li IfModActive="RimThunderTeams.RimThunder.Breakthrough">ModPatches/RimThunder - Breakthrough</li>
-		<li IfModActive="Aoba.RimThunder.RedArmy.ColdFront">ModPatches/RimThunder - Cold Front</li>
-		<li IfModActive="RimThunderTeams.RimThunder.DragonAscend">ModPatches/RimThunder - Dragon Ascend</li>
-		<li IfModActive="RimThunderTeams.RimThunder.Flashpoint">ModPatches/RimThunder - Flashpoint</li>
-		<li IfModActive="RimThunderTeams.RimThunder.RedDragon">ModPatches/RimThunder - Red Dragon</li>
-		<li IfModActive="Aoba.RimThunder.ROCA">ModPatches/RimThunder - Roaring Tiger</li>
-		<li IfModActive="RimThunderTeams.RimThunder.TorrentPioneer">ModPatches/RimThunder - Torrent Pioneer</li>
-		<li IfModActive="RimThunderTeams.RimThunder.WaytoSamurai">ModPatches/RimThunder - Way to Samurai</li>
-		<li IfModActive="MO.TechnicalVehicles">ModPatches/Technical Vehicles</li>
-		<li IfModActive="RimThunderTeams.RimThunder.RoyalGuard">ModPatches/RimThunder - Royal Guard</li>
-		<li IfModActive="RimThunderTeams.RimThunder.NortherngradLion">ModPatches/RimThunder - Northerngrad Lion</li>
-		<li IfModActive="RimThunderTeams.RimThunder.RedCavalry">ModPatches/RimThunder - Red Cavalry</li>
-		<li IfModActive="amaoto.HelldiversVehicles">ModPatches/HELLDIVERS - Vehicles</li>
-		<li IfModActive="JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan Vehicles Continued</li>
-		<li IfModActive="Omahawski.M808CCE">ModPatches/M808C Scorpion CE Patch</li>
-		<li IfModActive="sarg.alphavehiclesneolithic">ModPatches/Alpha Vehicles - Neolithic</li>
-		<li IfModActive="fxz.ratkinvehicle.morefailure">ModPatches/Ratkin Vehicles+</li>
-		<li IfModActive="cgf1.vehiclesgalore.roka">ModPatches/Korean Armory II - Vehicles</li>
-		<li IfModActive="Aoba.MZ.MobileWorker">ModPatches/Mechanization - MobileWorker</li>
-		<li IfModActive="Aoba.DeadManSwitch.Motorized">ModPatches/The Dead Man's Switch - Motorized</li>
-		<li IfModActive="RimThunderTeams.RimThunder.WarhorseofReich">ModPatches/RimThunder - Warhorse of Reich</li>
-		<li IfModActive="Lanking.P1000RCEPatches">ModPatches/CE Patches of Landkreuzer P1000 Ratte</li>
-		<li IfModActive="Zaryuobj279.Mod">ModPatches/Object 279 for RimWorld</li>
-		<li IfModActive="cancer3.ryougi">ModPatches/R3 Capraia</li>
 	</v1.5>
 </loadFolders>

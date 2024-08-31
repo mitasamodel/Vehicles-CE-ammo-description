@@ -3,7 +3,8 @@
 	<packageId>mitasamodel.vehiclesceammodescription</packageId>
 	<name>Vehicles: CE ammo description</name>
 	<author>mitasamodel</author>
-	<description>Add link to CE ammo in vehicle's description. Allows to see the projectile's parameters.\nIncludes upgrades</description>
+	<modVersion>1.5.2.0</modVersion>
+	<description>Version: 1.5.2.0\n\nAutomatically adds link to CE ammo in vehicle's description. Allows to see the projectile's parameters.\nIncludes upgrades</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -16,43 +17,15 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2890901044</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>imranfish.xmlextensions</packageId>
-			<displayName>XML Extensions</displayName>
-			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+			<packageId>SmashPhil.VehicleFramework</packageId>
+			<displayName>Vehicle Framework</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	
 	<loadAfter>
-		<li>imranfish.xmlextensions</li><!--XML Extensions-->
 		<li>CETeam.CombatExtended</li><!--Combat Extended-->
-		<!--<li>ZaryuHEV.Mod</li><!{1}**Hostile Environment Vehicles**{1}>-->
-		<li>AncientJeep.RUS</li>
-		<li>Killerbot.NavistarMaxxPro</li>
-		<li>RimThunderTeams.RimThunder.ArdennesAssault</li>
-		<li>RimThunderTeams.RimThunder.Breakthrough</li>
-		<li>Aoba.RimThunder.RedArmy.ColdFront</li>
-		<li>RimThunderTeams.RimThunder.DragonAscend</li><!--RimThunder - Dragon Ascend-->
-		<li>RimThunderTeams.RimThunder.Flashpoint</li><!--RimThunder - Flashpoint-->
-		<li>RimThunderTeams.RimThunder.RedDragon</li><!--RimThunder - Red Dragon-->
-		<li>Aoba.RimThunder.ROCA</li><!--RimThunder - Roaring Tiger-->
-		<li>RimThunderTeams.RimThunder.TorrentPioneer</li><!--RimThunder - Torrent Pioneer-->
-		<li>RimThunderTeams.RimThunder.WaytoSamurai</li><!--RimThunder - Way to Samurai-->
-		<li>MO.TechnicalVehicles</li><!--Technical Vehicles-->
-		<li>RimThunderTeams.RimThunder.RoyalGuard</li><!--RimThunder - Royal Guard-->
-		<li>RimThunderTeams.RimThunder.NortherngradLion</li><!--RimThunder - Northerngrad Lion-->
-		<li>RimThunderTeams.RimThunder.RedCavalry</li><!--RimThunder - Red Cavalry-->
-		<li>amaoto.HelldiversVehicles</li><!--HELLDIVERS - Vehicles-->
-		<li>JAHV.SpacerVehiclesHAL.CONTINUED</li><!--Titan Vehicles Continued-->
-		<li>Omahawski.M808CCE</li><!--M808C Scorpion CE Patch-->
-		<li>sarg.alphavehiclesneolithic</li><!--Alpha Vehicles - Neolithic-->
-		<li>fxz.ratkinvehicle.morefailure</li><!--Ratkin Vehicles+-->
-		<li>cgf1.vehiclesgalore.roka</li><!--Korean Armory II - Vehicles-->
-		<li>Aoba.MZ.MobileWorker</li><!--Mechanization - MobileWorker-->
-		<li>Aoba.DeadManSwitch.Motorized</li><!--The Dead Man's Switch - Motorized-->
-		<li>RimThunderTeams.RimThunder.WarhorseofReich</li><!--RimThunder - Warhorse of Reich-->
-		<li>Lanking.P1000RCEPatches</li><!--CE Patches of Landkreuzer P1000 Ratte-->
-		<li>Zaryuobj279.Mod</li><!--Object 279 for RimWorld-->
-		<li>cancer3.ryougi</li><!--R3 Capraia-->
+		<li>SmashPhil.VehicleFramework</li><!--Vehicle Framework-->
 	</loadAfter>
 </ModMetaData>
