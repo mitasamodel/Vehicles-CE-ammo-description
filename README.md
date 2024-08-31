@@ -1,29 +1,5 @@
-List of currently included vehicle's mods:
+# What mod does
+It automatically generate Hyperlinks of the used CE ammo and puts it into vehicle's description.
 
-- Alpha Vehicles - Neolithic
-- CE Patches of Landkreuzer P1000 Ratte
-- HELLDIVERS - Vehicles
-- Humvee
-- Korean Armory II - Vehicles
-- M808C Scorpion (CE Patch)
-- Mechanization - MobileWorker
-- Navistar MaxxPro MRAP
-- Object 279 for RimWorld
-- R3 Capraia
-- Ratkin Vehicles+ (only ground vehicles and trains)
-- RimThunder - Ardennes Assault
-- RimThunder - Breakthrough
-- RimThunder - Cold Front
-- RimThunder - Dragon Ascend
-- RimThunder - Flashpoint
-- RimThunder - Northerngrad Lion
-- RimThunder - Red Cavalry
-- RimThunder - Red Dragon
-- RimThunder - Roaring Tiger
-- RimThunder - Royal Guard
-- RimThunder - Torrent Pioneer
-- RimThunder - Warhorse of Reich
-- RimThunder - Way to Samurai
-- Technical Vehicles
-- The Dead Man's Switch - Motorized
-- Titan Vehicles Continued
+## Mod has been re-written
+It is completely has been rewritten on C# and now put the links automatically during the startup.
