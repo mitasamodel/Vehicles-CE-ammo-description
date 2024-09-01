@@ -5,6 +5,7 @@
 	<author>mitasamodel</author>
 	<modVersion>1.5.2.1</modVersion>
 	<description>Version: 1.5.2.1\n\nAutomatically adds link to CE ammo in vehicle's description. Allows to see the projectile's parameters.\nIncludes upgrades</description>
+	<url>https://github.com/mitasamodel/Vehicles-CE-ammo-description</url>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
