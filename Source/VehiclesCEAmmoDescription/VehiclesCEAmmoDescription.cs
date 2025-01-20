@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Net;
-using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
-using CombatExtended;
-using CombatExtended.Compatibility;
-using RimWorld;
 using Vehicles;
 using Verse;
 
@@ -18,29 +11,26 @@ namespace VehiclesCEAmmoDescription
 	[StaticConstructorOnStartup]
 	public static class VehiclesCEAmmoDescription
 	{
+		static readonly bool DEBUG = false;
+		static readonly string logFile = @Environment.CurrentDirectory + @"\Mods\CEAmmoDescription_log.txt";
+
 		static VehiclesCEAmmoDescription()
 		{
-			bool DEBUG = false;
-
-			//Debug log
-			string logFile = @Environment.CurrentDirectory + @"\Mods\CEAmmoDescription_log.txt";
-			StringBuilder log = new StringBuilder();
+			if (DEBUG) System.IO.File.WriteAllText(logFile, "CEAmmoDescription\n");	//create/rewrite file
 
 			//Go through all "VehicleDef" in the game. Looking for Turrets and Upgrades (may contain turrets)
 			foreach (VehicleDef vehicle in DefDatabase<VehicleDef>.AllDefsListForReading)
 			{
-				log.Append("Vehicle: " + vehicle.defName + "\n");
+				Log("Vehicle: " + vehicle.defName + "\n");
 
 				//Turrets
-				LinkTurrets(vehicle, log);
+				LinkTurrets(vehicle);
 
 				//Upgrades
-				LinkUpgrades(vehicle, log);
+				LinkUpgrades(vehicle);
 
-				log.Append("\n");
+				Log("\n");
 			}
-
-			if (DEBUG) System.IO.File.WriteAllText(logFile, log.ToString());
 		}
 
 		/// <summary>
@@ -51,22 +41,29 @@ namespace VehiclesCEAmmoDescription
 			//Vehicle has upgrades
 			if (vehicle.GetCompProperties<CompProperties_UpgradeTree>() is CompProperties_UpgradeTree compUpgrades)
 			{
-				log?.AppendLine("Upgrade: " + compUpgrades.def);
+				Log("Upgrade: " + compUpgrades.def + "\n");
 
 				UpgradeTreeDef upgradeTree = compUpgrades.def as UpgradeTreeDef;
 
 				//Each upgrade Tree can have multiple upgrade nodes
 				foreach (UpgradeNode node in upgradeTree.nodes)
 				{
-					//Each node can have several actual upgrades...
-					foreach (Upgrade upgrade in node.upgrades)
+					if (node.upgrades != null)		//yes, it can happen, that UpgradeTree exists, but there are no real upgrades inside... =/
 					{
-						//But we want turrets only
-						if (upgrade is TurretUpgrade upgTurrets)
+						//Each node can have several actual upgrades...
+						foreach (Upgrade upgrade in node.upgrades)
 						{
-							//Single upgrade can modify several turrets
-							foreach (VehicleTurret turret in upgTurrets.turrets)
-								LinkTurret(vehicle, turret.turretDef, log);
+							//But we want turrets only
+							if (upgrade is TurretUpgrade upgTurrets)
+							{
+								//Only upgrade, which adds turret (Upgrade can also remove turret)
+								if (upgTurrets.turrets != null)
+								{
+									//Single upgrade can modify several turrets
+									foreach (VehicleTurret turret in upgTurrets.turrets)
+										LinkTurret(vehicle, turret.turretDef);
+								}
+							}
 						}
 					}
 				}
@@ -76,32 +73,32 @@ namespace VehiclesCEAmmoDescription
 		/// <summary>
 		/// <c>HyperlinksTurrets</c> adds hyperlinks for vehicle's turrets
 		/// </summary>
-		private static void LinkTurrets(VehicleDef vehicle, StringBuilder log = null)
+		private static void LinkTurrets(VehicleDef vehicle)
 		{
 			//Vehicle has turrets at all
 			if (vehicle.GetCompProperties<CompProperties_VehicleTurrets>() is CompProperties_VehicleTurrets compTurrets)
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
-					LinkTurret(vehicle, turret.turretDef, log);
+					LinkTurret(vehicle, turret.turretDef);
 			}
 		}
 
 		/// <summary>
 		/// <c>LinkTurret</c> adds hyperlink for the turret
 		/// </summary>
-		private static void LinkTurret(VehicleDef vehicle, VehicleTurretDef turretDef, StringBuilder log = null)
+		private static void LinkTurret(VehicleDef vehicle, VehicleTurretDef turretDef)
 		{
 			//Check if this turret has ammoSet defined for CE: DefModExtension
 			if (turretDef.HasModExtension<CETurretDataDefModExtension>())
 			{
 				Def ammoSet = turretDef.GetModExtension<CETurretDataDefModExtension>()._ammoSet;
-				log?.AppendLine("Turret: " + turretDef + " - " + ammoSet);
+				Log("Turret: " + turretDef + " - " + ammoSet + "\n");
 				AddHyperlink(vehicle, ammoSet);
 			}
 		}
 
-		private static void AddHyperlink(Def def, Def linkToAdd, StringBuilder log = null)
+		private static void AddHyperlink(Def def, Def linkToAdd)
 		{
 			if (def == null || linkToAdd == null)
 				return;
@@ -111,6 +108,11 @@ namespace VehiclesCEAmmoDescription
 				return;
 
 			def.descriptionHyperlinks.Add(linkToAdd);
+		}
+
+		private static void Log(string line)
+		{
+			if (DEBUG) System.IO.File.AppendAllText(logFile, line);
 		}
 	}
 }
