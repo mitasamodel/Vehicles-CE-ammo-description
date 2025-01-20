@@ -36,7 +36,7 @@ namespace VehiclesCEAmmoDescription
 		/// <summary>
 		/// <c>HyperlinksUpgrades</c> adds hyperlinks based on vehicle's upgrades
 		/// </summary>
-		private static void LinkUpgrades(VehicleDef vehicle, StringBuilder log = null)
+		private static void LinkUpgrades(VehicleDef vehicle)
 		{
 			//Vehicle has upgrades
 			if (vehicle.GetCompProperties<CompProperties_UpgradeTree>() is CompProperties_UpgradeTree compUpgrades)
