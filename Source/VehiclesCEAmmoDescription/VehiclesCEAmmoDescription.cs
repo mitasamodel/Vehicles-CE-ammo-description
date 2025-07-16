@@ -17,7 +17,7 @@ namespace VehiclesCEAmmoDescription
 
 		static VehiclesCEAmmoDescription()
 		{
-			if (DEBUG) System.IO.File.WriteAllText(logFile, "CEAmmoDescription\n");	//create/rewrite file
+			if (DEBUG) System.IO.File.WriteAllText(logFile, "CEAmmoDescription\n"); //create/rewrite file
 
 			//Go through all "VehicleDef" in the game. Looking for Turrets and Upgrades (may contain turrets)
 			foreach (VehicleDef vehicle in DefDatabase<VehicleDef>.AllDefsListForReading)
@@ -49,7 +49,7 @@ namespace VehiclesCEAmmoDescription
 				//Each upgrade Tree can have multiple upgrade nodes
 				foreach (UpgradeNode node in upgradeTree.nodes)
 				{
-					if (node.upgrades != null)		//yes, it can happen, that UpgradeTree exists, but there are no real upgrades inside... =/
+					if (node.upgrades != null)      //yes, it can happen, that UpgradeTree exists, but there are no real upgrades inside... =/
 					{
 						//Each node can have several actual upgrades...
 						foreach (Upgrade upgrade in node.upgrades)
@@ -62,7 +62,11 @@ namespace VehiclesCEAmmoDescription
 								{
 									//Single upgrade can modify several turrets
 									foreach (VehicleTurret turret in upgTurrets.turrets)
+#if V1_5
 										LinkTurret(vehicle, turret.turretDef);
+#else
+										LinkTurret(vehicle, turret.def);
+#endif
 								}
 							}
 						}
@@ -81,7 +85,11 @@ namespace VehiclesCEAmmoDescription
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
+#if V1_5
 					LinkTurret(vehicle, turret.turretDef);
+#else
+					LinkTurret(vehicle, turret.def);
+#endif
 			}
 		}
 
