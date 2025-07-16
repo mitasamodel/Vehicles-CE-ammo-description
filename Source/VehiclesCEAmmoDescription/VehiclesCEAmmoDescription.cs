@@ -62,7 +62,7 @@ namespace VehiclesCEAmmoDescription
 								{
 									//Single upgrade can modify several turrets
 									foreach (VehicleTurret turret in upgTurrets.turrets)
-										LinkTurret(vehicle, turret.def);
+										LinkTurret(vehicle, turret.turretDef);
 								}
 							}
 						}
@@ -81,7 +81,7 @@ namespace VehiclesCEAmmoDescription
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
-					LinkTurret(vehicle, turret.def);
+					LinkTurret(vehicle, turret.turretDef);
 			}
 		}
 
