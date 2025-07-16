@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CombatExtended;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,7 +62,7 @@ namespace VehiclesCEAmmoDescription
 								{
 									//Single upgrade can modify several turrets
 									foreach (VehicleTurret turret in upgTurrets.turrets)
-										LinkTurret(vehicle, turret.turretDef);
+										LinkTurret(vehicle, turret.def);
 								}
 							}
 						}
@@ -80,7 +81,7 @@ namespace VehiclesCEAmmoDescription
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
-					LinkTurret(vehicle, turret.turretDef);
+					LinkTurret(vehicle, turret.def);
 			}
 		}
 
@@ -89,12 +90,22 @@ namespace VehiclesCEAmmoDescription
 		/// </summary>
 		private static void LinkTurret(VehicleDef vehicle, VehicleTurretDef turretDef)
 		{
+			Log("Turret: " + turretDef.defName + " - ");
 			//Check if this turret has ammoSet defined for CE: DefModExtension
 			if (turretDef.HasModExtension<CETurretDataDefModExtension>())
 			{
-				Def ammoSet = turretDef.GetModExtension<CETurretDataDefModExtension>()._ammoSet;
-				Log("Turret: " + turretDef + " - " + ammoSet + "\n");
-				AddHyperlink(vehicle, ammoSet);
+				//Try to get Class directly
+				Def ammoSet = turretDef.GetModExtension<CETurretDataDefModExtension>()._ammoSet ??
+					//Or look up the Class by the ammoSet name
+					VehicleTurret.LookupAmmosetCE(turretDef.GetModExtension<CETurretDataDefModExtension>().ammoSet);
+
+				if (ammoSet != null)
+				{
+					Log(ammoSet.defName + "\n");
+					AddHyperlink(vehicle, ammoSet);
+				}
+				else
+					Log("\n");
 			}
 		}
 
