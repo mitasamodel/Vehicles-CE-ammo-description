@@ -1,7 +1,9 @@
 ﻿using CombatExtended;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using Vehicles;
 using Verse;
@@ -62,11 +64,7 @@ namespace VehiclesCEAmmoDescription
 								{
 									//Single upgrade can modify several turrets
 									foreach (VehicleTurret turret in upgTurrets.turrets)
-#if V1_5
-										LinkTurret(vehicle, turret.turretDef);
-#else
-										LinkTurret(vehicle, turret.def);
-#endif
+										LinkTurret(vehicle, turret.GetTurretDef());
 								}
 							}
 						}
@@ -85,11 +83,7 @@ namespace VehiclesCEAmmoDescription
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
-#if V1_5
-					LinkTurret(vehicle, turret.turretDef);
-#else
-					LinkTurret(vehicle, turret.def);
-#endif
+					LinkTurret(vehicle, turret.GetTurretDef());
 			}
 		}
 
@@ -132,6 +126,31 @@ namespace VehiclesCEAmmoDescription
 		private static void Log(string line)
 		{
 			if (DEBUG) System.IO.File.AppendAllText(logFile, line);
+		}
+	}
+
+	/// <summary>
+	/// VF changed the field `turretDef` => `def`. This is the look up of the alias in new version
+	/// This supports both old (1.5) and new (1.6) version and potentially further versions
+	/// </summary>
+	public static class VehiclesCEAmmoDescription_Compat
+	{
+		//just in case the visibility will be changed
+		private static readonly BindingFlags flags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
+		//Check 1.5 and 1.6 fields. Then try to check 'LoadAlias' attribute
+		private static readonly FieldInfo turretDefField = typeof(VehicleTurret).GetField("def", flags) ??
+			typeof(VehicleTurret).GetField("turretDef", flags) ??
+			typeof(VehicleTurret)
+			.GetFields()
+			.FirstOrDefault(f => f.GetCustomAttribute<LoadAliasAttribute>()?.alias == "turretDef");
+
+		public static VehicleTurretDef GetTurretDef(this VehicleTurret turret)
+		{
+			if (turretDefField == null)
+				Log.Error("[VehiclesCEAmmoDescription_Compat] Could not find VehicleTurretDef field.");
+
+			//Log.Warning("[VehiclesCEAmmoDescription_Compat] Def: " + turretDefField.ToString() + "\n");
+			return turretDefField?.GetValue(turret) as VehicleTurretDef;
 		}
 	}
 }
