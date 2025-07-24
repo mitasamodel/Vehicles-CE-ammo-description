@@ -14,17 +14,16 @@ namespace VehiclesCEAmmoDescription
 	[StaticConstructorOnStartup]
 	public static class VehiclesCEAmmoDescription
 	{
-		static readonly bool DEBUG = false;
-		static readonly string logFile = @Environment.CurrentDirectory + @"\Mods\CEAmmoDescription_log.txt";
-
 		static VehiclesCEAmmoDescription()
 		{
-			if (DEBUG) System.IO.File.WriteAllText(logFile, "CEAmmoDescription\n"); //create/rewrite file
+#if DEBUG
+			Verse.Log.Warning("[VehiclesCEAmmoDescription] Start");
+#endif
 
 			//Go through all "VehicleDef" in the game. Looking for Turrets and Upgrades (may contain turrets)
 			foreach (VehicleDef vehicle in DefDatabase<VehicleDef>.AllDefsListForReading)
 			{
-				Log("Vehicle: " + vehicle.defName + "\n");
+				Log($"Vehicle: {vehicle.defName}");
 
 				//Turrets
 				LinkTurrets(vehicle);
@@ -32,7 +31,7 @@ namespace VehiclesCEAmmoDescription
 				//Upgrades
 				LinkUpgrades(vehicle);
 
-				Log("\n");
+				Log("");
 			}
 		}
 
@@ -44,7 +43,7 @@ namespace VehiclesCEAmmoDescription
 			//Vehicle has upgrades
 			if (vehicle.GetCompProperties<CompProperties_UpgradeTree>() is CompProperties_UpgradeTree compUpgrades)
 			{
-				Log("Upgrade: " + compUpgrades.def + "\n");
+				Log($"Upgrade: {compUpgrades.def}");
 
 				UpgradeTreeDef upgradeTree = compUpgrades.def as UpgradeTreeDef;
 
@@ -83,7 +82,12 @@ namespace VehiclesCEAmmoDescription
 			{
 				//Several turrets can be attached to a single vehicle
 				foreach (VehicleTurret turret in compTurrets.turrets)
-					LinkTurret(vehicle, turret.GetTurretDef());
+				{
+					Log($"Turret: {turret?.Name}");
+
+					if (turret != null)
+						LinkTurret(vehicle, turret.GetTurretDef());
+				}
 			}
 		}
 
@@ -92,7 +96,13 @@ namespace VehiclesCEAmmoDescription
 		/// </summary>
 		private static void LinkTurret(VehicleDef vehicle, VehicleTurretDef turretDef)
 		{
-			Log("Turret: " + turretDef.defName + " - ");
+			if (turretDef == null)
+			{
+				Verse.Log.Error($"[VehiclesCEAmmoDescription] Vehicle {vehicle} has NULL turret def");
+				return;
+			}
+			Log($"Turret: {turretDef.defName}");
+
 			//Check if this turret has ammoSet defined for CE: DefModExtension
 			if (turretDef.HasModExtension<CETurretDataDefModExtension>())
 			{
@@ -103,11 +113,10 @@ namespace VehiclesCEAmmoDescription
 
 				if (ammoSet != null)
 				{
-					Log(ammoSet.defName + "\n");
+					Log($"AmmoSet: {ammoSet.defName}");
+
 					AddHyperlink(vehicle, ammoSet);
 				}
-				else
-					Log("\n");
 			}
 		}
 
@@ -123,9 +132,11 @@ namespace VehiclesCEAmmoDescription
 			def.descriptionHyperlinks.Add(linkToAdd);
 		}
 
-		private static void Log(string line)
+		public static void Log(string message)
 		{
-			if (DEBUG) System.IO.File.AppendAllText(logFile, line);
+#if DEBUG
+			Verse.Log.Message(message);
+#endif
 		}
 	}
 
@@ -147,9 +158,12 @@ namespace VehiclesCEAmmoDescription
 		public static VehicleTurretDef GetTurretDef(this VehicleTurret turret)
 		{
 			if (turretDefField == null)
-				Log.Error("[VehiclesCEAmmoDescription_Compat] Could not find VehicleTurretDef field.");
+				Verse.Log.Error("[VehiclesCEAmmoDescription_Compat] Could not find VehicleTurretDef field.");
 
-			//Log.Warning("[VehiclesCEAmmoDescription_Compat] Def: " + turretDefField.ToString() + "\n");
+			//if (turretDefField?.GetValue(turret) is VehicleTurretDef def)
+			//	return def;
+			//else
+			//	return null;
 			return turretDefField?.GetValue(turret) as VehicleTurretDef;
 		}
 	}

@@ -1,0 +1,7 @@
+<Project>
+  <ItemDefinitionGroup>
+    <Reference>
+      <Private>false</Private> <!-- Default Copy Local = False -->
+    </Reference>
+  </ItemDefinitionGroup>
+</Project>
